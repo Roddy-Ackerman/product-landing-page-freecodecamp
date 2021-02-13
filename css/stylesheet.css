@@ -1,0 +1,120 @@
+:root{
+    --blue:rgba(52, 123, 216, .5);
+    --red: rgba(61, 37, 124,.5);
+}
+
+@keyframes nav-hover{
+   from{color:white}
+   to{color:red}
+   from{font-size:18px}
+   to{font-size: 22px}
+}
+@keyframes nav-default{
+    from{color:red}
+    to{color:white}
+    from{font-size:22px}
+    to{font-size: 18px}
+}
+@keyframes icon-color-change{
+    from{background-color:(--blue)}
+    to{background-color:var(--red)}
+}
+@keyframes nav-color-change{
+    from{background-color:rgba(5, 30, 63, .5)}
+    to{background-color:var(--red)};
+}
+
+.page-wrapper{
+    width:80%;
+    margin:auto;
+    background-color: rgba(211, 201, 201, 0.5);
+    padding:10px;
+}
+
+#header-img{
+    display:flex;
+    min-width: 5%;
+    max-width:10%;
+    height:auto;
+    background-color:rgba(52, 123, 216, 0.5);
+    animation:icon-color-change 5s linear 2s infinite alternate;
+    margin-top:10%;
+}
+.header-image{
+    display:flex;
+    justify-content: center;
+    margin: auto auto 150px auto;
+
+}
+
+.header{
+    display:block;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+}
+#nav-bar{
+    position:fixed;
+    margin:auto;
+    width:25%;
+    background-color:rgba(5, 30, 63, 0.5);
+    padding: 15px;
+    color:red;
+    animation:nav-color-change 3s linear 1s infinite alternate;
+    text-align: center;
+}
+
+#nav-bar a{
+    animation-name:nav-default;
+    animation-duration:1s;
+    color:white;
+    font-size: 18px;
+
+}
+#nav-bar a:hover{
+    animation-name:nav-hover;
+    animation-duration:1s;
+}
+.nav{
+    display:block;
+    margin:auto;
+    justify-content: center;
+}
+
+.product-info{
+    margin:auto;
+}
+
+.title{
+    display:block;
+    margin-top: 10%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.description{
+    font-size: 20px;;
+    display: flex;
+    text-align: center;
+    margin:auto;
+    margin-top:5%;
+    width:80%;
+}
+
+.video{
+    display:flex;
+    margin:auto;
+    justify-content: center;
+}
+.form{
+    display:flex;
+    margin:auto;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px) {
+
+    h3{
+        font-size: 24px;;
+    }
+}
