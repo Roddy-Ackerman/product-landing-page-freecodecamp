@@ -43,8 +43,13 @@
 .header-image{
     display:flex;
     justify-content: center;
-    margin: auto auto 150px auto;
+    margin: auto;
 
+}
+
+#game-widget{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .header{
