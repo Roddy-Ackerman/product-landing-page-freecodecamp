@@ -119,7 +119,8 @@
 
 @media only screen and (max-width:601px) {
     #nav-bar a:hover{
-        animation-name:nav-hover;
+        animation-name:none;
+        color:red;
     }
     #nav-bar a{
         animation-name:none;
